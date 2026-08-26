@@ -503,4 +503,4 @@ PRODUCT_PACKAGES += \
     firmware_WCNSS_qcom_cfg.ini_symlink
 
 # Inherit from the proprietary files makefile.
-$(call inherit-product, vendor/oneplus/avicii/avicii-vendor.mk)
+$(call inherit-product, vendor/oppo/ciri/ciri-vendor.mk)

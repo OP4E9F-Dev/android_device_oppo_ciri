@@ -7,7 +7,7 @@
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
-DEVICE_PATH := device/oneplus/avicii
+DEVICE_PATH := device/oppo/ciri
 
 # A/B
 AB_OTA_UPDATER := true
@@ -113,8 +113,8 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_RAMDISK_USE_LZ4 := true
-TARGET_KERNEL_ADDITIONAL_FLAGS := BRAND_SHOW_FLAG=oneplus
-TARGET_KERNEL_SOURCE := kernel/oneplus/sm7250
+TARGET_KERNEL_ADDITIONAL_FLAGS := BRAND_SHOW_FLAG=oppo
+TARGET_KERNEL_SOURCE := kernel/oppo/sm7250
 TARGET_KERNEL_CONFIG := vendor/lito-perf_defconfig vendor/debugfs.config
 
 # Lineage Health
@@ -201,4 +201,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Include the proprietary files BoardConfig.
-include vendor/oneplus/avicii/BoardConfigVendor.mk
+include vendor/oppo/ciri/BoardConfigVendor.mk
