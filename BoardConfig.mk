@@ -10,19 +10,7 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 DEVICE_PATH := device/oppo/ciri
 
 # A/B
-AB_OTA_UPDATER := true
-
-AB_OTA_PARTITIONS += \
-    boot \
-    dtbo \
-    odm \
-    product \
-    recovery \
-    system \
-    system_ext \
-    vbmeta \
-    vbmeta_system \
-    vendor
+AB_OTA_UPDATER := false
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
