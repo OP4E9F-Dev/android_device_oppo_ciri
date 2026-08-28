@@ -110,7 +110,7 @@
       <value>576000</value>   <!-- 576  MHz CPU speed -->
       <value>614400</value>  <!-- 744.8 MHz CPU speed -->
       <value>864000</value>  <!-- 998.4 MHz CPU speed -->
-      <value>1075200</value>  <!-- 1209.6 MHz CPU speed -->
+      <value>902400</value>  <!-- 998.4 MHz CPU speed -->
       <value>1363200</value>  <!-- 1324.8 MHz CPU speed -->
       <value>1516800</value>  <!-- 1516.8 MHz CPU speed -->
       <value>1651200</value>  <!-- 1612.8 MHz CPU speed -->
@@ -126,6 +126,8 @@
       <value>1900800</value>  <!-- 1363  MHz CPU speed -->
       <value>2092800</value>  <!-- 1536  MHz CPU speed -->
       <value>2208000</value>  <!-- 1747  MHz CPU speed -->
+      <value>2342400</value>  <!-- 1747  MHz CPU speed -->
+      <value>2400000</value>  <!-- 1747  MHz CPU speed -->
   </array>
   
   <array name="cpu.core_speeds.cluster2">
@@ -137,6 +139,9 @@
       <value>2188800</value>  <!-- 1363  MHz CPU speed -->
       <value>2304000</value>  <!-- 1536  MHz CPU speed -->
       <value>2400000</value>  <!-- 1747  MHz CPU speed -->
+      <value>2611200</value>  <!-- 1747  MHz CPU speed -->
+      <value>2707200</value>  <!-- 1747  MHz CPU speed -->
+      <value>2803200</value>  <!-- 1747  MHz CPU speed -->
   </array>
   
     <!-- Current at each CPU speed for cluster 0, as per 'cpu.speeds.cluster0'.
@@ -166,6 +171,8 @@
       <value>189</value>  <!-- ~448mA -->
       <value>252</value>  <!-- ~586mA -->
       <value>263</value>  <!-- ~641mA -->
+      <value>282</value>  <!-- ~641mA -->
+      <value>307</value>  <!-- ~641mA -->
   </array>
   
   <array name="cpu.core_power.cluster2">
@@ -177,6 +184,9 @@
       <value>314</value>  <!-- ~448mA -->
       <value>329</value>  <!-- ~586mA -->
       <value>339</value>  <!-- ~641mA -->
+      <value>351</value>  <!-- ~641mA -->
+      <value>366</value>  <!-- ~641mA -->
+      <value>382</value>  <!-- ~641mA -->
   </array>
 
   <!-- Current when CPU is awake -->
@@ -191,7 +201,7 @@
   </array>
 
   <!-- This is the battery capacity in mAh (measured at nominal voltage) -->
-  <item name="battery.capacity">4000</item>
+  <item name="battery.capacity">4300</item>
 
   <!-- Wifi related values. -->
   <!-- Idle Receive current for wifi radio in mA. 0 by default-->
