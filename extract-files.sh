@@ -92,9 +92,12 @@ function blob_fixup() {
         vendor/lib64/libril-qc-hal-qmi.so)
             "${PATCHELF}" --add-needed "libshims_ocsclk.so" "${2}"
             ;;
-        vendor/lib64/hw/com.qti.chi.override.so)
+        vendor/lib64/hw/camera.qcom.so)
             [ "$2" = "" ] && return 0
             grep -q libcamera_metadata_shim.so "${2}" || "${PATCHELF}" --add-needed libcamera_metadata_shim.so "${2}"
+             ;;
+        vendor/lib64/hw/com.qti.chi.override.so)
+            [ "$2" = "" ] && return 0
             sed -i "s/com.oem.autotest/\x00om.oem.autotest/" "${2}"
             ;;
         vendor/lib64/sensors.ssc.so)
