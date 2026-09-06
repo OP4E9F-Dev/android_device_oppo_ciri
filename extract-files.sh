@@ -89,6 +89,9 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             sed -i "s/android.hidl.base@1.0.so/libhidlbase.so\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/" "${2}"
             ;;
+        vendor/lib64/libril-qc-hal-qmi.so)
+            "${PATCHELF}" --add-needed "libshims_ocsclk.so" "${2}"
+            ;;
         vendor/lib64/hw/com.qti.chi.override.so)
             [ "$2" = "" ] && return 0
             grep -q libcamera_metadata_shim.so "${2}" || "${PATCHELF}" --add-needed libcamera_metadata_shim.so "${2}"
