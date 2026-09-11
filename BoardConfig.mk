@@ -115,6 +115,9 @@ TARGET_BOARD_PLATFORM := lito
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
+# OTA assert
+TARGET_OTA_ASSERT_DEVICE := PEXM00,OP4E9F
+
 # Partitions
 -include vendor/lineage/config/BoardConfigReservedSize.mk
 BOARD_BOOTIMAGE_PARTITION_SIZE := 100663296
