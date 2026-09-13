@@ -230,7 +230,7 @@ vendor.usb.use_ffs_mtp=1
 vendor.usb.use_gadget_hal=1
 
 # USB String
-vendor.usb.product_string=OnePlus Nord
+vendor.usb.product_string=OPPO K9
 
 # Verity
 ro.apk_verity.mode=2
