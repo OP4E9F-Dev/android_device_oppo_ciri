@@ -11,12 +11,7 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 PRODUCT_PACKAGES += \
     AntHalService-Soong \
     com.dsi.ant@1.0.vendor
-
-# Alert slider
-PRODUCT_PACKAGES += \
-    KeyHandler \
-    tri-state-key-calibrate
-
+    
 # Atrace
 PRODUCT_PACKAGES += \
     android.hardware.atrace@1.0-service
