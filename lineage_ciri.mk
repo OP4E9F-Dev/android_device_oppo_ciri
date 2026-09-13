@@ -23,8 +23,8 @@ PRODUCT_MODEL := PEXM00
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="PEXM00-user 13 TP1A.220905.001 1745244429130 release-keys" \
-    BuildFingerprint=OPPO/PEXM00/OP4E9F:13/TP1A.220905.001/1745244429130:user/release-keys\
+    BuildDesc="PEXM00-user 13 TP1A.220905.001 R.1d8246d-1-175b5 release-keys" \
+    BuildFingerprint=OPPO/PEXM00/OP4E9F:13/TP1A.220905.001/R.1d8246d-1-175b5:user/release-keys\
     DeviceName=OP4E9F \
     DeviceProduct=PEXM00 \
     SystemDevice=OP4E9F \
