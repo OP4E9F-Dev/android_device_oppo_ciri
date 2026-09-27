@@ -81,10 +81,6 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             apktool_patch "${2}" "${MY_DIR}/blob-patches/PowerOffAlarm.patch" -s
             ;;
-        product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml)
-            [ "$2" = "" ] && return 0
-            sed -i "s/\/my_product/\/product/" "${2}"
-            ;;
         system_ext/lib64/libwfdnative.so)
             [ "$2" = "" ] && return 0
             sed -i "s/android.hidl.base@1.0.so/libhidlbase.so\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/" "${2}"
