@@ -1,0 +1,9 @@
+# Fingerprint
+genfscon proc /fp_kernel_event    u:object_r:vendor_proc_fp_event:s0
+genfscon proc /tee_bind_core      u:object_r:vendor_proc_fp_event:s0
+
+# Modem
+genfscon sysfs /devices/platform/soc/9ea00000.qcom,rmtfs_sharedmem/uio    u:object_r:sysfs_uio:s0
+
+# Wakeup
+genfscon sysfs /devices/platform/soc/984000.i2c/i2c-5/5-0038/wakeup    u:object_r:sysfs_wakeup:s0

@@ -1,0 +1,5 @@
+# rmtfs sharedmem
+allow vendor_rmt_storage sysfs:file { getattr open read };
+
+# oplusstanvbk (modem nvbk)
+allow vendor_rmt_storage vendor_oplusstanvbk_device:blk_file { open read write };

@@ -1,0 +1,5 @@
+# Fingerprint
+type vendor_proc_fp_event, fs_type, proc_type;
+
+# Modem
+type vendor_oplusstanvbk_device, dev_type;
