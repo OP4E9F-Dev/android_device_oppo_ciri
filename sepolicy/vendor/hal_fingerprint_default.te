@@ -1,0 +1,5 @@
+# commondcs
+allow hal_fingerprint_default vendor_hal_commondcs_hwservice:hwservice_manager find;
+
+# r_dir_file(fp_kernel_event / tee_bind_core)
+allow hal_fingerprint_default vendor_proc_fp_event:file rw_file_perms;

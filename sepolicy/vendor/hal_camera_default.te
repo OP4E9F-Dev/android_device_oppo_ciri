@@ -1,0 +1,6 @@
+# commondcs
+dontaudit hal_camera_default vendor_hal_commondcs_hwservice:hwservice_manager find;
+
+# default_prop / system_prop
+dontaudit hal_camera_default default_prop:file read;
+dontaudit hal_camera_default system_prop:file read;

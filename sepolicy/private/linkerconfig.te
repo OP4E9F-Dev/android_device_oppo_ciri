@@ -1,0 +1,2 @@
+# self
+dontaudit linkerconfig self:capability kill;

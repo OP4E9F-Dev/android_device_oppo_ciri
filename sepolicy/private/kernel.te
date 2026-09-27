@@ -1,0 +1,2 @@
+# opbootfrom
+dontaudit kernel proc:file read;

@@ -1,0 +1,2 @@
+# store_user
+dontaudit vendor_qti_init_shell sysfs:file write;
