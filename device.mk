@@ -24,6 +24,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl \
     android.hardware.soundtrigger@2.3-impl \
     audio.bluetooth.default \
+    audio.primary.lito \
     audio.r_submix.default \
     audio.usb.default \
     liba2dpoffload \
@@ -37,6 +38,7 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libsndmonitor \
     libspkrprot \
+    libssrec \
     libvolumelistener
 
 PRODUCT_COPY_FILES += \
