@@ -177,6 +177,7 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
+    init.qti.media.sh \
     init.target.rc \
     ueventd.oplus.rc \
     ueventd.qcom.rc
@@ -201,13 +202,7 @@ PRODUCT_COPY_FILES += \
 
 # OMX
 PRODUCT_PACKAGES += \
-    init.qti.media.sh \
-    libOmxAacEnc \
-    libOmxAmrEnc \
     libOmxCore \
-    libOmxEvrcEnc \
-    libOmxG711Enc \
-    libOmxQcelp13Enc \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
@@ -243,10 +238,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libshims_ocsclk \
     libvndfwk_detect_jni.qti.vendor
-
-# Seccomp policy
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/seccomp/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
 
 # Sensors
 PRODUCT_PACKAGES += \
