@@ -45,6 +45,8 @@ def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
 blob_fixups: blob_fixups_user_type = {
     'odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service': blob_fixup()
         .add_needed('libshims_fingerprint.oplus.so'),
+    ('odm/lib64/mediadrm/libwvdrmengine.so', 'odm/lib64/libwvhidl.so'): blob_fixup()
+        .add_needed('libcrypto_shim.so'),
     'product/app/PowerOffAlarm/PowerOffAlarm.apk': blob_fixup()
         .apktool_patch('blob-patches/PowerOffAlarm.patch', '-s'),
     'vendor/lib64/hw/camera.qcom.so': blob_fixup()
