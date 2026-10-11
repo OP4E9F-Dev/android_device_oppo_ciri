@@ -47,6 +47,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libshims_fingerprint.oplus.so'),
     'odm/lib64/libarc_eis_custom.so': blob_fixup()
         .replace_needed('libarc_eis_custom_20127.so', 'libarc_eis_custom.so'),
+    'odm/lib64/libaps_frame_registration.so': blob_fixup()
+        .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
     ('odm/lib64/mediadrm/libwvdrmengine.so', 'odm/lib64/libwvhidl.so'): blob_fixup()
         .add_needed('libcrypto_shim.so'),
     'system_ext/bin/wfdservice': blob_fixup()
