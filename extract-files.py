@@ -45,6 +45,8 @@ def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
 blob_fixups: blob_fixups_user_type = {
     'odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service': blob_fixup()
         .add_needed('libshims_fingerprint.oplus.so'),
+    'odm/lib64/libarc_eis_custom.so': blob_fixup()
+        .replace_needed('libarc_eis_custom_20127.so', 'libarc_eis_custom.so'),
     ('odm/lib64/mediadrm/libwvdrmengine.so', 'odm/lib64/libwvhidl.so'): blob_fixup()
         .add_needed('libcrypto_shim.so'),
     'system_ext/bin/wfdservice': blob_fixup()
